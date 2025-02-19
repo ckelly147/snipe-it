@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:'Dejavu Sans', Arial, Helvetica, sans-serif;
             font-size: 11px;
         }
     </style>
@@ -34,9 +34,9 @@
 
 
 <p>
-    Assigned on: {{$check_out_date}}<br>
-    Assigned to: {{$assigned_to}}<br>
-    Accepted on: {{$accepted_date}}
+    {{ trans('general.assigned_date') }}: {{$check_out_date}}<br>
+    {{ trans('general.assignee') }}: {{$assigned_to}}<br>
+    {{ trans('general.accepted_date') }}: {{$accepted_date}}
 </p>
 
 
